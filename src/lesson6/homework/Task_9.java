@@ -21,6 +21,7 @@ public class Task_9 {
     char c3 = sc.next().charAt(0);
     char c4 = sc.next().charAt(0);
     char c5 = sc.next().charAt(0);
+
     System.out.printf(" %c%c%c%c%c",c,c2,c3,c4,c5);
 
 

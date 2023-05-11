@@ -28,8 +28,8 @@ public class Task_8 {
     digit0 = number % 2;
     number = number / 2;
 
-    System.out.println(
-        digit0 + " " + digit1 + " " + digit2 + " " + digit3 + " " + digit4 + " " + digit5);
+    System.out.println("/// "+
+        digit0 + digit1  + digit2  + digit3  + digit4  + digit5);
     System.out.println("Проверка " + Integer.toBinaryString(copy));
 
   }
