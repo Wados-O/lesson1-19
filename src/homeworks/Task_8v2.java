@@ -1,20 +1,27 @@
-package lesson5.homework;
-//Считываете число (0 ...32)
-//Вывести двоичное представление, не используя Integer.toBinaryString
+package homeworks;
+
 import java.util.Scanner;
 
-public class Task_8 {
+//Показать пример переполнения для своих чисел
+public class Task_8v2 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    int number = scanner.nextInt();
+    byte number = scanner.nextByte();
     StringBuilder binaryBuilder = new StringBuilder();
 
     while (number > 0) {
       binaryBuilder.insert(0, number % 2);
-      number = number / 2;
+      number = (byte) (number / 2);
     }
-
     String binary = binaryBuilder.toString();
     System.out.println("Двоичное представление числа: " + binary);
+    while (number>=0){
+      number++;
+      if (number<0){
+        System.out.println(number +binary);
+        break;
+      }
+    }
+
   }
 }
