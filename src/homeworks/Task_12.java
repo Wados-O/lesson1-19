@@ -21,7 +21,7 @@ public class Task_12 {
       while (number > 0){
         lastDigit = number % 10;
         sum = sum+ lastDigit;
-        number = number /2;
+        number = number /10;
 
       }
       System.out.println(randomNumber + " -> " + sum);
