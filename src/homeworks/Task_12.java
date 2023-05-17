@@ -15,13 +15,13 @@ public class Task_12 {
     Random random = new Random();
     for (int i = 0; i < 10; i++) {
       int sum = 0;
-      int number  = random.nextInt(100001)+1000;
+      int number = random.nextInt(100001) + 1000;
       int randomNumber = number;
       int lastDigit;
-      while (number > 0){
+      while (number > 0) {
         lastDigit = number % 10;
-        sum = sum+ lastDigit;
-        number = number /10;
+        sum = sum + lastDigit;
+        number = number / 10;
 
       }
       System.out.println(randomNumber + " -> " + sum);

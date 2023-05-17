@@ -15,15 +15,12 @@ public class Task_10 {
     int a = sc.nextInt();
     int b = sc.nextInt();
     int c = sc.nextInt();
-    if (a>=b){
+    if (a > b && c < a) {
       System.out.println(a);
-    } else if (b>=c) {
+    } else if (b > c && a < b) {
       System.out.println(b);
-
-    } else {
+    } else if (c > a && b < c) {
       System.out.println(c);
-
     }
   }
-
 }
