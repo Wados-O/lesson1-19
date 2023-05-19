@@ -19,23 +19,31 @@ public class Task_14 {
     for (int i = 0; i < box.length; i++) {
       System.out.print(box[i] + "|");
     }
-    int minDigit = box[0];
-    int maxDigit = box[0];
+    int minIndex = 0; // индекс минимального элемента
+    int maxIndex = 0; // индекс максимального элемента
+
+
+    // Находим индексы минимального и максимального элементов
     for (int i = 1; i < box.length; i++) {
-      if (box[i] < minDigit) {
-        minDigit = box[i];
+      if (box[i] < box[minIndex]) {
+        minIndex = i;
       }
-      if (box[i] > maxDigit) {
-        maxDigit = box[i];
+      if (box[i] > box[maxIndex]) {
+        maxIndex = i;
       }
     }
-    System.out.println();
-    System.out.println("Минимальное число массива |" + minDigit);
-    System.out.println("Максимальное число массива |" + maxDigit);
 
-    int temp = box[minDigit];
-    box[minDigit] = box[maxDigit];
-    box[minDigit] = temp;
+    System.out.println();
+    System.out.println("Минимальное число массива |" + box[minIndex]);
+    System.out.println("Максимальное число массива |" + box[maxIndex]);
+    int temp = box[minIndex];
+    box[minIndex] = box[maxIndex];
+    box[maxIndex] = temp;
+
+    for (int i = 0; i < box.length; i++) {
+      System.out.print(box[i] + "|");
+    }
+
   }
 }
 
