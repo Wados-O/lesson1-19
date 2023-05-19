@@ -4,30 +4,6 @@ import java.util.Scanner;
 
 public class Task_13 {
 
-  public static void mathPow() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Введите число М: ");
-    int m = sc.nextInt();
-    System.out.println("Введите число N");
-    int n = sc.nextInt();
-    int result = 1;
-    for (int i = 0; i < n; i++) {
-      result *= m;
-    }
-    System.out.println("Результат: " + result);
-  }
-
-  public static void arithmeticMean() {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Введите число М: ");
-    int m = sc.nextInt();
-    System.out.println("Введите число N");
-    int n = sc.nextInt();
-    int sum = n + m;
-    sum = sum / 2;
-    System.out.println(sum);
-  }
-
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -42,19 +18,33 @@ public class Task_13 {
       switch (choice) {
         case 1:
           System.out.println("1. Получить степень числа");
-          mathPow();
+          System.out.println("Введите число М:");
+          int M = scanner.nextInt();
+          System.out.println("Введите число N:");
+          int N = scanner.nextInt();
+          int result = 1;
+          for (int i = 0; i < N; i++) {
+            result = result * M;
+          }
+          System.out.println("Результат:" + result);
           break;
-
         case 2:
           System.out.println("2. Получить среднее арифметическое");
-          arithmeticMean();
+          System.out.println("Введите число N:");
+          int digitN = scanner.nextInt();
+          System.out.println("Ведите N числа:");
+          double sum = 0;
+          for (int i = 0; i < digitN; i++) {
+            double digitsN = scanner.nextDouble();
+            sum += digitsN;
+          }
+          double resultDigits = sum / digitN;
+          System.out.println("Результат:" + resultDigits);
           break;
-
         case 0:
           System.out.println("0. Завершить работу");
           return;
       }
-
     }
     scanner.close();
   }
