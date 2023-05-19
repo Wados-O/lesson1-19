@@ -19,11 +19,11 @@ public class Task_14 {
     for (int i = 0; i < box.length; i++) {
       System.out.print(box[i] + "|");
     }
-    int minIndex = 0; // индекс минимального элемента
-    int maxIndex = 0; // индекс максимального элемента
+    int minIndex = 0;
+    int maxIndex = 0;
 
 
-    // Находим индексы минимального и максимального элементов
+
     for (int i = 1; i < box.length; i++) {
       if (box[i] < box[minIndex]) {
         minIndex = i;
