@@ -34,7 +34,7 @@ public class Task_16_STAR {
     String[] word = new String[wordNumber];
     while (isRun) {
       for (int i = 0; i < wordNumber; i++) {
-        word[i] = scanner.next();
+        word[i] = scanner.next().toUpperCase();
       }
 
       for (int i = word.length - 1; i >= 0; i--) {
@@ -44,7 +44,7 @@ public class Task_16_STAR {
       }
 
       System.out.println();
-      String checkWord = scanner.next();
+      String checkWord = scanner.next().toUpperCase();
       String found = null;
       for (int i = 0; i < word.length; i++) {
         if (word[i] != null && word[i].equals(checkWord)) {
