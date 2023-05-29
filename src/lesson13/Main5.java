@@ -24,6 +24,7 @@ public class Main5 {
       a[0] = a[indexOfMin]; // a[0] = -5
       a[indexOfMin] = temp; // a[12] = 88
     }
+
     for (int i = 0; i < a.length; i++) {
       System.out.print(a[i] + " | ");
     }

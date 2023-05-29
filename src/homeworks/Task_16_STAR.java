@@ -51,9 +51,9 @@ public class Task_16_STAR {
           found = word[i];
           System.out.println(i);
 
-            System.out.println(found + "|");
+          System.out.println(found + "|");
 
-        } else if (found == null){
+        } else if (found == null) {
           System.out.println(" not found word");
 
         }
